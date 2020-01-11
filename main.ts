@@ -37,13 +37,13 @@ let dvd = sprites.create(img`
 `, SpriteKind.Player)
 dvd.setFlag(SpriteFlag.BounceOnWall, true)
 dvd.setPosition(Math.randomRange(50, 100), Math.randomRange(30, 100))
-dvd.setVelocity(30, 30)
+dvd.setVelocity(Math.randomRange(30, 33), Math.randomRange(28, 31))
 scene.setTileMap(img`
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 
+f f f f f f f f f f 
+f f f f f f f f f f 
+f f f f f f f f f f 
+f f f f f f f f f f 
+f f f f f f f f f f 
+f f f f f f f f f f 
+f f f f f f f f f f 
 `)
